@@ -1,0 +1,31 @@
+﻿<Window x:Class="ShowingConcertMusic.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ShowingConcertMusic"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Image Margin="284,0,0,152" Source="/Image1.png" Stretch="Fill"/>
+        <RadioButton x:Name="Moskow" Content="" HorizontalAlignment="Left" Height="19" Margin="337,156,0,0" VerticalAlignment="Top" Width="17"/>
+        <RadioButton x:Name="Peterburg" Content="" HorizontalAlignment="Left" Height="19" Margin="346,122,0,0" VerticalAlignment="Top" Width="16"/>
+        <RadioButton x:Name="Novosibirsk" Content="" HorizontalAlignment="Left" Height="19" Margin="496,227,0,0" VerticalAlignment="Top" Width="17"/>
+        <RadioButton x:Name="Vladivostok" Content="" HorizontalAlignment="Left" Height="20" Margin="732,236,0,0" VerticalAlignment="Top" Width="17"/>
+        <RadioButton x:Name="Ekaterenburg" Content="" HorizontalAlignment="Left" Height="19" Margin="429,189,0,0" VerticalAlignment="Top" Width="17"/>
+        <RadioButton x:Name="Kaliningrad" Content="" HorizontalAlignment="Left" Height="19" Margin="284,120,0,0" VerticalAlignment="Top" Width="17"/>
+        <Button x:Name="Load" Content="Load" HorizontalAlignment="Left" Height="24" Margin="20,385,0,0" VerticalAlignment="Top" Width="99" Click="Load_Click"/>
+        <Label x:Name="NameCity" Content="City:" HorizontalAlignment="Left" Height="34" Margin="212,296,0,0" VerticalAlignment="Top" Width="134"/>
+        <Label x:Name="MusicGroup" Content="Music Groupe:" HorizontalAlignment="Left" Height="34" Margin="212,349,0,0" VerticalAlignment="Top" Width="134"/>
+        <Label x:Name="MusicShowName" Content="Name Show:" HorizontalAlignment="Center" Height="34" Margin="0,295,0,0" VerticalAlignment="Top" Width="134"/>
+        <Label x:Name="Origin" Content="Origin:" HorizontalAlignment="Center" Height="34" Margin="0,348,0,0" VerticalAlignment="Top" Width="134"/>
+        <Label x:Name="NameMusicPlace" Content="Concert Place:" HorizontalAlignment="Left" Height="34" Margin="475,296,0,0" VerticalAlignment="Top" Width="134"/>
+        <Label x:Name="Genres" Content="Genres:" HorizontalAlignment="Left" Height="34" Margin="475,349,0,0" VerticalAlignment="Top" Width="134"/>
+        <Label x:Name="DateMusicShow" Content="Date:" HorizontalAlignment="Left" Height="34" Margin="606,296,0,0" VerticalAlignment="Top" Width="134"/>
+        <Label x:Name="TypeShow" Content="Type Show:" HorizontalAlignment="Left" Height="34" Margin="606,347,0,0" VerticalAlignment="Top" Width="134"/>
+        <ListBox x:Name="ShowList" HorizontalAlignment="Left" Height="219" Margin="20,37,0,0" VerticalAlignment="Top" Width="203" d:ItemsSource="{d:SampleData ItemCount=5}" SelectionChanged="ShowList_SelectionChanged"/>
+        <RadioButton x:Name="IsBallet" Content="Is Ballet" HorizontalAlignment="Left" Height="19" Margin="20,293,0,0" VerticalAlignment="Top" Width="71"/>
+        <RadioButton x:Name="ForNight" Content="For Night" HorizontalAlignment="Left" Height="19" Margin="20,335,0,0" VerticalAlignment="Top" Width="99"/>
+
+    </Grid>
+</Window>
